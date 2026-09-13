@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-blog-demo
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  file:
+    name: ${LOG_FILE:spring-blog.log}
